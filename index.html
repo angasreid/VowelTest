@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+var f = function(number) {
+  console.log('Saving ' + number);
+};
+var g = function(number) {
+  console.log('Throwing ' + number + ' away!');
+};
+var runFunc = function(number,callback) {
+  console.log('Doing meaningful work on ' + number);
+  number++;
+  number++;
+  console.log('Number is now ' + number);
+  callback(number);
+};
+runFunc(4,f);
+runFunc(5,g);
+	</script>
+	
+</body>
+</html>
